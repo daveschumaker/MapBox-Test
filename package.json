@@ -1,0 +1,15 @@
+{
+  "name": "maps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy": "cp src/index.html build/index.html",
+    "build": "npm run copy && browserify src/app.js -o build/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify src/app.js -o build/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
